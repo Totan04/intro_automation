@@ -1,0 +1,136 @@
+{
+  "id": "17f0de32-4fee-46a9-94f1-a4ddf7ceb657",
+  "version": "2.0",
+  "name": "First_IDETest_Jhonathan",
+  "url": "https://songs-by-sinatra.herokuapp.com",
+  "tests": [{
+    "id": "7dd7ceeb-3200-4f70-8331-1cb1a11e23a2",
+    "name": "Login-Log out",
+    "commands": [{
+      "id": "aab79b8c-9b27-4011-b8dd-f92175416823",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87442282-b52d-4b09-89c2-9be9f0fe75a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed80bc5a-75f0-48cd-93a9-fe6d479a00ba",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [],
+      "value": "Welcome to this website all about the songs of the great Frank Sinatra"
+    }, {
+      "id": "0539c6b5-2421-41e4-8a78-62626a16b63e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=log in",
+      "targets": [],
+      "value": "log in"
+    }, {
+      "id": "1296d31f-6d85-423a-82b7-eacbd4ebb4b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62fb2e44-595d-405f-85fa-4c25128935a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["css=.main", "css:finder"],
+        ["xpath=//section", "xpath:position"],
+        ["xpath=//section[contains(.,'Welcome to this website all about the songs of the great Frank Sinatra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c9676ad-466f-4205-8d33-e63b0eeaf9ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "frank"
+    }, {
+      "id": "0b695e7e-398e-4e06-b290-0a3868e0af3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2413537-c4bc-40d7-8ca5-d902b9ef8586",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [],
+      "value": "sinatra"
+    }, {
+      "id": "edbbdd33-2a70-4380-a9f5-189b75087074",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2867b6d5-0b64-40ea-a8d5-2477b057afb4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flash",
+      "targets": [],
+      "value": "You are now logged in as frank"
+    }, {
+      "id": "5c0bde9a-7512-4b25-abc8-fb2114a4b778",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=log out",
+      "targets": [],
+      "value": "log out"
+    }, {
+      "id": "54e89d5a-33d4-47b8-88b5-5e5e4877d85a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log out",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "521f010a-e96d-4e1f-9e38-cc3419af28b5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flash",
+      "targets": [],
+      "value": "You have now logged out"
+    }, {
+      "id": "961f612c-ce3c-4bc2-a449-e7b8eeceebbb",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=log in",
+      "targets": [],
+      "value": "log in"
+    }]
+  }],
+  "suites": [{
+    "id": "51633bb6-051c-4a9e-8b9a-5113c9573c2f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7dd7ceeb-3200-4f70-8331-1cb1a11e23a2"]
+  }],
+  "urls": ["https://songs-by-sinatra.herokuapp.com/"],
+  "plugins": []
+}
