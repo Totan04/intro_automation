@@ -1,0 +1,18 @@
+1.  descargar git
+2.  instalarlo 
+3.  abrimos.
+
+comandos:  
+pwd - me da la ruta actual
+ls - lista los direct y archivos
+mkdir - crear directorio
+cd - cambiar a otro directorio
+rm -rf <nombre carpeta> - remueve o borra archivos.  NUNCA LO HAGAN EN ROOT /c NUUUUNCA
+
+En github hicimos un fork (copia al carbon de un proyecto) de github.com/jomarnavarro/intro_automation
+
+1. Clonamos  git clone <url>
+2. Modificamos algun archivo fisicamente
+3. Agregamos los cambios  git add <nombre archivo>
+4. Los hicimos commit git commit -m"Mensaje de los cambios"
+5. Los empujamos al servidor. git push
